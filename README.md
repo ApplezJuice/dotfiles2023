@@ -66,3 +66,30 @@ unzip -p /tmp/win32yank.zip win32yank.exe > /tmp/win32yank.exe
 chmod +x /tmp/win32yank.exe
 sudo mv /tmp/win32yank.exe /usr/local/bin/
 ```
+
+Install cmake and libs for CCLS and LSP
+```
+sudo apt install libncurses-dev
+sudo apt install zlib1g-dev
+sudo apt install cmake
+sudo apt install libplib-dev
+```
+For C#, install mono and dotnet
+```
+sudo apt install gnupg ca-certificates
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+echo "deb https://download.mono-project.com/repo/ubuntu stable-focal main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
+wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+sudo apt update
+sudo apt-get install -y dotnet-sdk-6.0
+sudo apt install mono-devel
+```
+
+If you are missing any more libs, you can use this tool to find them
+```
+sudo apt-get install apt-file
+apt-file update
+apt-file search /usr/lib/x86_64-linux-gnu/libtinfo.so
+```

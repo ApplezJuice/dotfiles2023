@@ -6,6 +6,10 @@ call plug#begin()
 
 if has("nvim")
   Plug 'neovim/nvim-lspconfig'
+  Plug 'williamboman/nvim-lsp-installer'
+  Plug 'hrsh7th/cmp-nvim-lsp'
+  Plug 'hrsh7th/nvim-cmp'
+
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-repeat'
   Plug 'beauwilliams/statusline.lua'
