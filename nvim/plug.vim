@@ -12,6 +12,8 @@ if has("nvim")
   Plug 'SirVer/ultisnips'
   Plug 'hrsh7th/cmp-buffer'
 
+  Plug 'nvim-lualine/lualine.nvim'
+
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-repeat'
   Plug 'beauwilliams/statusline.lua'

@@ -4,6 +4,15 @@ if !exists('g:loaded_nvim_treesitter')
 endif
 
 lua <<EOF
+require('lualine').setup{
+  sections = {
+    lualine_c = {
+      {
+          'filename', path=1
+      }
+    }
+  }
+}
 require'nvim-treesitter.configs'.setup {
   highlight = {
     enable = true,
