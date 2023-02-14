@@ -10,3 +10,5 @@ nnoremap <C-f> :NERDTreeFind<CR>
 nnoremap <silent> ;f <cmd>Files<CR>
 nnoremap <silent> <Leader>b :Buffers<CR>
 nnoremap <silent> <Leader>f :Rg<CR>
+
+nmap <silent> <Leader><C-n> :call Spawn_note_window() <CR>
