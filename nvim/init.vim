@@ -111,3 +111,12 @@ function! Spawn_note_window() abort
     execute "startinsert"
   endif
 endfunction
+
+function! HeaderToggle()
+    let filename = expand("%:t")
+    if filename =~ ".cpp"
+        execute "e %:r.h"
+    else
+        execute "e %:r.cpp"
+    endif
+endfunction
