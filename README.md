@@ -1,4 +1,4 @@
-#Dotfiles2023
+# Dotfiles2023
 
 if resolve errors, check /etc/resolv.conf
 
