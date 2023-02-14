@@ -69,7 +69,9 @@ end
 
 local lspconfig = require'lspconfig'
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
-require'lspconfig'.clangd.setup{}
+require'lspconfig'.clangd.setup {
+  capabilities = capabilities,
+}
 --lspconfig.ccls.setup {
 --  init_options = {
 --    compilationDatabaseDirectory = "build";
