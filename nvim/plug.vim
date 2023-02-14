@@ -13,6 +13,7 @@ if has("nvim")
   Plug 'hrsh7th/cmp-buffer'
 
   Plug 'nvim-lualine/lualine.nvim'
+  Plug 'lukas-reineke/indent-blankline.nvim'
 
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-repeat'
