@@ -44,6 +44,11 @@ if exists("&termguicolors") && exists("&winblend")
   hi! Normal ctermbg=NONE guibg=NONE
 endif
 
+" LSP / CMP "{{{
+" ---------------------------------------------------------------------
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " FZF "{{{
 " ---------------------------------------------------------------------

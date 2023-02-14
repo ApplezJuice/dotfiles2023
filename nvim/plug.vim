@@ -9,6 +9,8 @@ if has("nvim")
   Plug 'williamboman/nvim-lsp-installer'
   Plug 'hrsh7th/cmp-nvim-lsp'
   Plug 'hrsh7th/nvim-cmp'
+  Plug 'SirVer/ultisnips'
+  Plug 'hrsh7th/cmp-buffer'
 
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-repeat'
