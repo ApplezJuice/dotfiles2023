@@ -16,7 +16,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 ```
 To verify installation, enter: command -v nvm ...this should return 'nvm', if you receive 'command not found' or no response at all, close your current terminal, reopen it, and try again. Learn more in the nvm github repo.
 ```
-nvm ls to list versions
+nvm ls      - to list versions
 nvm install --lts
 ```
 
@@ -73,6 +73,7 @@ sudo apt install libncurses-dev
 sudo apt install zlib1g-dev
 sudo apt install cmake
 sudo apt install libplib-dev
+sudo apt install -y g++
 ```
 For C#, install mono and dotnet
 ```
