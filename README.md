@@ -56,7 +56,7 @@ export FZF_DEFAULT_COMMAND="rg --files --hidden --follow --glob '!.git'"
 ```
 RGrep
 ```
-sudo apt install rgrep
+sudo apt install ripgrep
 ```
 
 Install win32yank
