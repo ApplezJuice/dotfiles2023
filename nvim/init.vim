@@ -30,6 +30,15 @@ set grepprg=rg\ --vimgrep\ --smart-case\ --hidden\ --follow
 autocmd InsertLeave * set nopaste
 set clipboard=unnamedplus
 
+" Folding
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
+set foldtext=getline(v:foldstart).'...'.trim(getline(v:foldend))
+set fillchars=fold:\\
+set foldnestmax=3
+set foldminlines=1
+set nofoldenable
+
 " Imports "{{{
 " ---------------------------------------------------------------------
 runtime ./plug.vim

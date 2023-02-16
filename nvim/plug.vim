@@ -25,6 +25,10 @@ if has("nvim")
   Plug 'junegunn/fzf.vim'
   Plug 'airblade/vim-rooter'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+  "popup cmd
+  Plug 'MunifTanjim/nui.nvim'
+  Plug 'folke/noice.nvim'
 endif
 
 call plug#end()
