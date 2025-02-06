@@ -39,7 +39,11 @@ eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/microverse-power.o
 ```
 
 ## NeoVim Specific Setup
-
+Open neovim and install the plugins
+```
+nvim
+:PlugInstall
+```
 TreeSitter
 ```
 :TSInstallInfo
